@@ -26,7 +26,7 @@ public class UserApiController {
             ) {
 
         User user = userService.userSignUp(dto.toEntity());
-        userService.addAuthority(user.getId(), "ROLE_USER");
+        userService.addAuthority(user.getId(), "ROLE_USER"); // 커밋 테스트
     }
 
     @PostMapping("/login")
